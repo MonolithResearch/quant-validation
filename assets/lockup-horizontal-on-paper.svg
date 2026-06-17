@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="800" height="240">
+  <rect width="800" height="240" fill="#f3efe8"></rect>
+  <text x="120" y="170" text-anchor="middle" font-family="&#39;Cormorant Garamond&#39;, &#39;Cormorant&#39;, Garamond, serif" font-style="italic" font-weight="500" font-size="200" fill="#0e0c14" letter-spacing="-4">Σ</text>
+  <line x1="240" y1="60" x2="240" y2="180" stroke="#0e0c14" stroke-width="1" opacity="0.25"></line>
+  <text x="270" y="115" font-family="&#39;Cormorant Garamond&#39;, &#39;Cormorant&#39;, Garamond, serif" font-style="italic" font-weight="500" font-size="58" fill="#0e0c14">Monolith</text>
+  <text x="270" y="155" font-family="&#39;Cormorant Garamond&#39;, &#39;Cormorant&#39;, Garamond, serif" font-weight="500" font-size="22" fill="#7a6177" letter-spacing="11">RESEARCH</text>
+  <line x1="270" y1="172" x2="450" y2="172" stroke="#0e0c14" stroke-width="1" opacity="0.35"></line>
+  <text x="270" y="194" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="11" fill="#0e0c14" opacity="0.55" letter-spacing="3"></text>
+</svg>

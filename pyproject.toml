@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "monolith-validation"
+version = "0.1.0"
+description = "Litigation-grade anti-overfitting statistics for quant backtests: PSR, Deflated Sharpe, MinTRL, PBO/CSCV, and a promotion gate."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Bilal Malik", email = "bilal@monolithresearch.uk" }]
+maintainers = [{ name = "Monolith Research" }]
+keywords = [
+    "quant",
+    "backtesting",
+    "overfitting",
+    "deflated-sharpe",
+    "probabilistic-sharpe",
+    "pbo",
+    "cscv",
+    "finance",
+    "validation",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.9",
+    "pandas>=1.5",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+plots = ["matplotlib>=3.6"]
+dev = ["pytest>=7.0", "matplotlib>=3.6"]
+
+[project.urls]
+Homepage = "https://github.com/MonolithResearch/quant-validation"
+Repository = "https://github.com/MonolithResearch/quant-validation"
+Issues = "https://github.com/MonolithResearch/quant-validation/issues"
+
+[tool.setuptools]
+packages = ["monolith_validation"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
