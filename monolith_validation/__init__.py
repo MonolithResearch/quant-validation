@@ -1,15 +1,14 @@
-"""monolith-validation — the anti-overfitting gate from Monolith Research.
+"""monolith-validation — research diagnostics from Monolith Research.
 
 Σ  Monolith Research — Evidence over narrative
 
-A small, dependency-light toolkit (numpy / scipy / pandas) for separating real
-quantitative edge from search artifacts: Probabilistic Sharpe, Deflated Sharpe,
+A small toolkit for investigating uncertainty and selection bias in backtests:
+Probabilistic Sharpe, Deflated Sharpe,
 Minimum Track Record Length, Probability of Backtest Overfitting (CSCV), a
 skew/kurtosis-adjusted Sharpe confidence interval, and an implementation-
-uncertainty interval — wrapped in a single forensic report and a promotion gate.
+uncertainty interval — wrapped in a single report and an evidence-complete gate.
 
-Built to kill bad strategies, including its author's own. See the README for the
-honest scorecard.
+The included examples are synthetic and make no claims about trading performance.
 """
 from __future__ import annotations
 

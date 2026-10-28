@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "monolith-validation"
 version = "0.1.0"
-description = "Litigation-grade anti-overfitting statistics for quant backtests: PSR, Deflated Sharpe, MinTRL, PBO/CSCV, and a promotion gate."
+description = "Research diagnostics for backtests: PSR, Deflated Sharpe, MinTRL, PBO/CSCV, and an evidence-complete gate."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
@@ -33,6 +33,7 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Office/Business :: Financial :: Investment",
     "Topic :: Scientific/Engineering :: Mathematics",
 ]
@@ -54,6 +55,9 @@ Issues = "https://github.com/MonolithResearch/quant-validation/issues"
 
 [tool.setuptools]
 packages = ["monolith_validation"]
+
+[project.scripts]
+gate-check = "monolith_validation.cli:main"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
