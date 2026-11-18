@@ -62,6 +62,16 @@ Same fixture with too few trades: FAIL
 The pass fixture deliberately uses a large, persistent synthetic drift. It is a
 test of the software contract, not a proposed strategy.
 
+## Worked example
+
+Run `python -m examples.selection_bias` from the repository root. The example
+chooses the highest in-sample Sharpe from 100 independent zero-mean candidates.
+On the fixed seed, the winner's PSR is 0.989 against zero and its DSR is 0.464
+against the expected maximum. Repeating the selection on complementary blocks
+puts the training winner below the test median in 47.1% of splits. The table
+also shows the frozen winner on a separately drawn holdout.
+[Example source](examples/selection_bias.py) · [Methodology, formulas and tests](docs/METHODOLOGY.md)
+
 ## Python API
 
 ```python
