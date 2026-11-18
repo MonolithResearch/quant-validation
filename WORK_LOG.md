@@ -316,4 +316,16 @@ checks passed (28 API and 14 actual CLI cases) under Python 3.14 with warnings a
 errors. Masked evidence, first-row missing markers, long CSV fields and huge
 annualization values reject through the intended contracts; valid controls pass.
 Reviewed source hashes remained unchanged. Evidence: external
-C:/Users/there/MONOLITH/FINAL_VALIDATION_REVIEW_20261028.md.
+the October publication review receipt.
+
+## 2026-11-18 · Methodology and selection bias
+
+Cross-checked the Sharpe inference formulas and CSCV ranks against the cited
+papers and the implementation. The methodology records the code's treatment
+of units, dispersion, partial blocks and ties. The example uses the entire
+synthetic trial matrix for selection diagnostics and reserves a separate draw
+for the frozen candidate. A small regression checks the winner, trial count,
+PSR versus DSR, PBO threshold and holdout calculation.
+
+Reproduce with `python -m examples.selection_bias` and `python -m pytest -q`.
+The default synthetic search returned FAIL.
